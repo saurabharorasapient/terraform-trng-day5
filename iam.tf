@@ -4,7 +4,7 @@ resource "aws_iam_user" "lb11" {
 }
 
 resource "aws_s3_bucket" "example1" {  
-    bucket = "my-tf-test-bucket1"
+    bucket = "my-tf-test-bucket-sapient-saurabh"
     tags = {    
             Name        = "My bucket1"    
             Environment = "Dev"  
