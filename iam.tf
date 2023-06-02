@@ -1,17 +1,17 @@
-resource "aws_iam_user" "lb11" {
+resource "aws_iam_user" "lb111" {
   name = "demo-user111"
   path = "/system/"
 }
 
 resource "aws_s3_bucket" "example1" {  
-    bucket = "my-tf-test-bucket-sapient-saurabh"
+    bucket = "my-tf-test-bucket-sapient-saurabharora"
     tags = {    
             Name        = "My bucket1"    
             Environment = "Dev"  
             }
 }
-resource "aws_security_group" "ec2-sg" {
-  name = "myec2-sg"
+resource "aws_security_group" "ec2-sg1" {
+  name = "myec2-sg1"
   
   ingress {
     description      = "ingress port for vault"
@@ -36,6 +36,6 @@ resource "aws_security_group" "ec2-sg" {
   }
 }
 
-resource "aws_eip" "eip" {
+resource "aws_eip" "eip1" {
     vpc = true
 }
