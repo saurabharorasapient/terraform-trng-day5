@@ -3,10 +3,10 @@ resource "aws_iam_user" "lb11" {
   path = "/system/"
 }
 
-resource "aws_s3_bucket" "example" {  
+resource "aws_s3_bucket" "example1" {  
     bucket = "my-tf-test-bucket"
     tags = {    
-            Name        = "My bucket"    
+            Name        = "My bucket1"    
             Environment = "Dev"  
             }
 }
